@@ -25,7 +25,7 @@
 | `Feat` | ✨ | `:sparkles:` | 새로운 기능 추가 또는 기존 기능 개선 |
 | `Bug` | 🐛 | `:bug:` | 버그, 오류, 데이터 불일치 수정 |
 | `Docs` | 📚 | `:books:` | README, 가이드 등 문서 변경 |
-| `Style` | 🎨 | `:art:` | 동작에 영향을 주지 않는 코드 스타일 변경 |
+| `Style` | 🧹 | `:broom:` | 동작에 영향을 주지 않는 코드 스타일 변경 |
 | `Refactor` | 🛠 | `:hammer_and_wrench:` | 기능 변경 없는 코드·구조 개선 |
 | `Test` | 🧪 | `:test_tube:` | 테스트 추가 및 수정 |
 | `Chore` | ⚙️ | `:gear:` | 의존성, 설정, 개발 환경 관련 작업 |
@@ -43,7 +43,7 @@
 ✨ Feat: 사용자 프로필 수정 기능 구현
 🐛 Bug: 중복 요청이 처리되는 오류 수정
 🛠 Refactor: 인증 검증 로직 분리
-🎨 Style: 코드 포맷팅 규칙 적용
+🧹 Style: 코드 포맷팅 규칙 적용
 🔒 Security: 접근 권한 검증 강화
 ```
 
@@ -76,7 +76,7 @@
 이슈를 종료하지 않고 참조만 할 경우 이슈 번호만 작성합니다.
 
 ```text
-Related: #75
+Related #75
 ```
 
 ## Branch Convention

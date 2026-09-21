@@ -1,0 +1,36 @@
+name: 🔔 CI/CD 실행 결과 알림
+
+on:
+  workflow_run:
+    workflows:
+      - "🧪 CI"
+      - "🚀 CD"
+    types:
+      - completed
+    branches:
+      - main
+      - develop
+
+jobs:
+  notify:
+    name: 📢 CI/CD 결과 전송
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📣 CI/CD 디스코드 알림
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          status: ${{ github.event.workflow_run.conclusion }}
+
+          title: "${{ github.event.workflow_run.name }}"
+
+          description: |
+            **🌿 브랜치:** `${{ github.event.workflow_run.head_branch }}`
+            **📊 결과:** `${{ github.event.workflow_run.conclusion }}`
+            **👤 실행자:** `${{ github.event.workflow_run.actor.login }}`
+            **🧾 커밋:** `${{ github.event.workflow_run.head_sha }}`
+
+          url: ${{ github.event.workflow_run.html_url }}
+          username: 📣 CI/CD 알림
+          nocontext: true
