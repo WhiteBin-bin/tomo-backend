@@ -217,6 +217,7 @@ memberCommandService.updateProfileImage(memberId, storedFile.objectKey());
 
 ### 구현 방식
 
+- 운영 코드와 테스트 코드 모두 `var`를 사용하지 않고 변수 타입을 명시합니다.
 - 같은 도메인 내부의 Service와 Facade는 기본적으로 구체 클래스로 사용합니다. 다른 도메인에 공개하는 서비스 계약은 인터페이스로 정의하며, 구현 교체나 모듈 경계 분리가 필요한 경우에도 인터페이스를 도입할 수 있습니다.
 - `Service`와 `ServiceImpl`을 기계적으로 분리하지 않습니다.
 - Spring Bean은 생성자 주입을 사용합니다.

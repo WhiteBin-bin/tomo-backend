@@ -1,0 +1,55 @@
+/* Catppuccin Latte / Mocha, Mauve accent. Palette: https://catppuccin.com/palette/ */
+.light-mode {
+  --scalar-color-1: #4c4f69;
+  --scalar-color-2: #5c5f77;
+  --scalar-color-3: #6c6f85;
+  --scalar-color-accent: #8839ef;
+  --scalar-background-1: #eff1f5;
+  --scalar-background-2: #e6e9ef;
+  --scalar-background-3: #dce0e8;
+  --scalar-background-accent: #8839ef1a;
+  --scalar-border-color: #ccd0da;
+  --scalar-color-green: #40a02b;
+  --scalar-color-red: #d20f39;
+  --scalar-color-yellow: #df8e1d;
+  --scalar-color-blue: #1e66f5;
+  --scalar-color-orange: #fe640b;
+  --scalar-color-purple: #8839ef;
+  --scalar-button-1: #8839ef;
+  --scalar-button-1-color: #eff1f5;
+  --scalar-button-1-hover: #7287fd;
+}
+.dark-mode {
+  --scalar-color-1: #cdd6f4;
+  --scalar-color-2: #bac2de;
+  --scalar-color-3: #a6adc8;
+  --scalar-color-accent: #cba6f7;
+  --scalar-background-1: #1e1e2e;
+  --scalar-background-2: #181825;
+  --scalar-background-3: #11111b;
+  --scalar-background-accent: #cba6f71a;
+  --scalar-border-color: #313244;
+  --scalar-color-green: #a6e3a1;
+  --scalar-color-red: #f38ba8;
+  --scalar-color-yellow: #f9e2af;
+  --scalar-color-blue: #89b4fa;
+  --scalar-color-orange: #fab387;
+  --scalar-color-purple: #cba6f7;
+  --scalar-button-1: #cba6f7;
+  --scalar-button-1-color: #1e1e2e;
+  --scalar-button-1-hover: #b4befe;
+}
+.light-mode .sidebar,
+.dark-mode .sidebar {
+  --scalar-sidebar-background-1: var(--scalar-background-2);
+  --scalar-sidebar-color-1: var(--scalar-color-1);
+  --scalar-sidebar-color-2: var(--scalar-color-2);
+  --scalar-sidebar-color-active: var(--scalar-color-accent);
+  --scalar-sidebar-border-color: var(--scalar-border-color);
+  --scalar-sidebar-item-hover-color: var(--scalar-color-1);
+  --scalar-sidebar-item-hover-background: var(--scalar-background-3);
+  --scalar-sidebar-item-active-background: var(--scalar-background-accent);
+  --scalar-sidebar-search-background: var(--scalar-background-1);
+  --scalar-sidebar-search-border-color: var(--scalar-border-color);
+  --scalar-sidebar-search-color: var(--scalar-color-2);
+}
